@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="de-CH">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Multimediabeitrag – Vorlage</title>
+
+    <meta name="description" content="Standardisierte Vorlage für einen Multimediabeitrag (Fokus: Inhalt)." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">Multimediabeitrag</div>
+      </div>
+    </header>
+
+    <main class="page">
+      <article class="container">
+        <!-- Audio-Teaser (zuoberst, vor der Oberzeile, OPTIONAL) -->
+        <!-- Audio-Beitrag -->
+        <div class="audio-card content-block">
+          <h3 class="audio-label">Audio-Teaser</h3>
+          <audio class="audio" controls preload="metadata">
+            <source src="assets/audio/teaser.mp3" type="audio/mpeg" />
+            Dein Browser unterstützt das Audio-Element nicht.
+          </audio>
+        </div>
+        <!-- Ende - Audio-Beitrag -->
+        <!-- Ende - Audio-Teaser -->
+
+        <!-- !!! FIX !!! Reihenfolge der Inhalte im content-header bis inkl. erstem Textblock ist vorgegeben !!! FIX !!! -->
+        <!-- Content-Header -->
+        <header class="content-header">
+          <!-- Oberzeile -->
+          <p class="preheadline">Dritte Gewalt – eine Reportage aus dem Gericht</p>
+          <!-- Ende - Oberzeile -->
+
+          <!-- Titel -->
+          <h1 class="headline" id="headline-title">Eine Smartwatch lügt nicht</h1>
+          <!-- Ende - Titel -->
+
+          <!-- Lead -->
+          <p class="lead">
+            Sexuelle Übergriffe von Taxi-Chauffeuren kommen allzu häufig vor. Fast immer steht danach Aussage gegen Aussage. Eine schwierige
+            Ausgangslage für die Gerichte – ausser, es taucht ein unerwartetes Beweismittel auf.
+          </p>
+          <!-- Ende - Lead -->
+
+          <!-- Autor:innenzeile-->
+          <p class="author-line content-block">
+            Ein Beitrag von <span class="author-name">Anna Muster</span> und <span class="author-name">Noé Beispiel</span>,
+            <time datetime="2026-02-13">13.02.2026</time>
+          </p>
+          <!-- Ende - Autor:innenzeile-->
+
+          <p class="content-block">
+            Es ist Dezember, kurz vor Weihnachten. Nach einem Geschäftsessen in der Stadt Zürich ziehen die Arbeitskolleginnen weiter, es
+            wird eine lange Nacht mit reichlich Alkohol. Als eine der Frauen kaum noch auf den Beinen stehen kann, organisiert eine
+            fürsorgliche Vorgesetzte ein Uber-Taxi für sie.
+          </p>
+        </header>
+        <!-- Ende - Content-Header -->
+
+        <!-- VARIABLE: Inhalte können ab hier in der Reihenfolge angepasst werden -->
+        <!-- BLOCK: Audio-Einspieler zwischen Autor:innenzeile und erstem Textblock -->
+        <!-- Audio-Beitrag -->
+        <div class="audio-card content-block">
+          <h3 class="audio-label">Audio-Einspieler</h3>
+          <audio class="audio" controls preload="metadata">
+            <source src="assets/audio/einspieler.mp3" type="audio/mpeg" />
+            Dein Browser unterstützt das Audio-Element nicht.
+          </audio>
+        </div>
+        <!-- Ende - Audio-Beitrag -->
+        <!-- Ende - BLOCK: Audio-Einspieler zwischen Autor:innenzeile und erstem Textblock -->
+
+        <!-- BLOCK: Zwischentitel + Textblock -->
+        <section class="content-block text-block">
+          <h2 class="subheadline">Aussage gegen Aussage plus eine Smartwatch</h2>
+          <p>
+            Die Fahrt dauert knapp dreissig Minuten, doch dann bleibt der Chauffeur noch eine Stunde lang vor dem Wohnhaus seiner Kundin
+            stehen, die im Taxi auf der Rückbank eingeschlafen ist. Was ist in dieser Zeit geschehen? Die Schilderungen der Frau und des
+            Fahrers gehen diametral auseinander. Was die Aussagen der Kundin jedoch eindrücklich unterstützt, ist die Smartwatch an ihrem
+            Handgelenk.
+          </p>
+        </section>
+        <!-- Ende - BLOCK: Zwischentitel + Textblock -->
+
+        <!-- BLOCK: Einzelbild + Bildlegende -->
+        <figure class="content-block">
+          <img
+            class="figure-image"
+            src="assets/images/beispielbild_01.jpg"
+            alt="Platzhalterbild: Ersetze dieses Bild durch ein inhaltlich passendes Foto."
+            loading="lazy" />
+          <figcaption class="figure-caption">
+            <strong>Die Smartwatch erleichterte die Wahrheitsfindung im Fall xy.</strong> Foto: Beat Mustermann
+          </figcaption>
+        </figure>
+        <!-- Ende - BLOCK: Einzelbild + Bildlegende -->
+
+        <!-- BLOCK: Audio O-Ton / Expert:in / Betroffene / Atmo -->
+        <!-- Audio-Beitrag -->
+        <div class="audio-card content-block">
+          <h3 class="audio-label">O-Ton (Betroffene / Expert:in / Atmo)</h3>
+          <audio class="audio" controls preload="metadata">
+            <source src="assets/audio/oton.mp3" type="audio/mpeg" />
+            Dein Browser unterstützt das Audio-Element nicht.
+          </audio>
+        </div>
+        <!-- Ende - Audio-Beitrag -->
+        <!-- Ende - BLOCK: Audio O-Ton / Expert:in / Betroffene / Atmo -->
+
+        <!-- BLOCK: Abschliessende Einschätzung (Audio, OPTIONAL) -->
+        <!-- Audio-Beitrag -->
+        <div class="audio-card content-block">
+          <h3 class="audio-label">Abschluss (Einschätzung / Fazit)</h3>
+          <audio class="audio" controls preload="metadata">
+            <source src="assets/audio/abschluss.mp3" type="audio/mpeg" />
+            Dein Browser unterstützt das Audio-Element nicht.
+          </audio>
+        </div>
+        <!-- Ende - Audio-Beitrag -->
+        <!-- Ende - BLOCK: Abschliessende Einschätzung  -->
+
+        <!-- BLOCK: Zusammenfassung oder Transkription für Menschen mit Hörbeeinträchtigung -->
+        <details class="text-toggle">
+          <summary>Mehr lesen</summary>
+          <p>
+            Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in
+            Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort
+            und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund
+            fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches
+            Leben. Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war Lorem Ipsum, hinaus zu gehen in die weite Grammatik.
+            Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch
+            das Blindtextchen ließ sich nicht beirren.
+          </p>
+          <p>
+            Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des
+            Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die
+            Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse. Wehmütig lief ihm eine rethorische Frage über
+            die Wange, dann setzte es seinen Weg fort. Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo sie herkäme
+            wäre sie …
+          </p>
+        </details>
+        <!--Ende - BLOCK: Zusammenfassung oder Transkription für Menschen mit Hörbeeinträchtigung -->
+
+        <!-- Footer ist OPTIONAL -->
+        <footer class="article-footer">
+          <p class="small">
+            <span class="copyleft">©</span> 2026 – Vorlage für einen Multimediabeitrag. Bitte Inhalte, Medien und Quellen sorgfältig prüfen.
+          </p>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>
