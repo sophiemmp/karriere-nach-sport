@@ -17,17 +17,19 @@
 
   --radius: 18px;
   --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --logo-bg: var(--text);
 }
 
 @media (prefers-color-scheme: light){
   :root{
-    --bg: #f7f7fb;
-    --surface: #ffffff;
-    --text: #111827;
-    --muted: #4b5563;
+    --bg: #eeebf4;
+    --surface: #faf8fc;
+    --text: #030204;
+    --muted: #403545;
     --line: #e5e7eb;
-    --accent: #0369a1;
+    --accent: #6e26a1;
     --shadow: 0 12px 30px rgba(2, 6, 23, .08);
+    --logo-bg: #00000000;
   }
 }
 
@@ -83,8 +85,11 @@ details {
 }
 
 .logo {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
+  background: var(--logo-bg);
+  border-radius: 4px;
+  padding: 2px;
 }
 
 /* Header */
