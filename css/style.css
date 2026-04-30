@@ -279,6 +279,12 @@ figure {
   font-size: .95rem;
 }
 
+.multiple-images {
+  display: flex;
+  gap: var(--ga-large);
+}
+
+
 
 /* Zusammenfassung oder Transkription 
 für Menschen mit Hörbeeinträchtigung */
@@ -311,3 +317,22 @@ für Menschen mit Hörbeeinträchtigung */
   transform: rotate(180deg);
 }
 
+@media screen and (max-width: 650px) {
+  .multiple-images {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .background-container,
+  .header-top,
+  video {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .preheadline {
+    padding-top: 10vh;
+  }
+}
