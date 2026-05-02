@@ -321,6 +321,11 @@ figure {
   gap: var(--ga-large);
 }
 
+.multiple-images > .figure-image {
+  flex: 1 1 0;
+  min-width: 0; /* important so Chrome can shrink it */
+  max-width: 100%;
+}
 
 
 /* Zusammenfassung oder Transkription 
@@ -367,7 +372,7 @@ footer a {
     font-size: 20px;
   }
   .multiple-images {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   #subheadline-2 {
     background-position-x: center, 62%;
