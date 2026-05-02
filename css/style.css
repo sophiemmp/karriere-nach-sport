@@ -67,9 +67,10 @@ article {
 
 .container>*,
 .content-header>*,
-.article-footer>*,
 .site-header>*,
-#subheadline-2 h2 {
+footer>*,
+#subheadline-2 h2,
+#impressum {
   width: min(var(--max-width), 100% - 2*var(--page-pad));
   margin: auto;
 }
@@ -85,6 +86,8 @@ details {
   display: flex;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
+  color: var(--text);
 }
 
 .logo {
@@ -333,7 +336,7 @@ für Menschen mit Hörbeeinträchtigung */
 
 
 /* Footer */
-.article-footer{
+footer{
   color: var(--muted);
   font-size: .9rem;
   padding-inline: 6px;
@@ -341,7 +344,7 @@ für Menschen mit Hörbeeinträchtigung */
   background: var(--bg);
 }
 
-.article-footer>* {
+footer>* {
   margin-inline: auto;
   width: min(var(--max-width), 100% - 2*var(--page-pad));
 }
@@ -349,6 +352,14 @@ für Menschen mit Hörbeeinträchtigung */
 .copyleft {
   display: inline-block;   /* wichtig, damit transform sauber greift */
   transform: rotate(180deg);
+}
+
+footer a {
+  color: var(--text);
+}
+
+#impressum {
+  margin-top: 20vh;
 }
 
 @media screen and (max-width: 650px) {
