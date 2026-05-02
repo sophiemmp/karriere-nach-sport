@@ -105,6 +105,8 @@ details {
   width: 100vw;
   position: fixed;
   z-index: -1;
+  margin-bottom: 20vh;
+  background: var(--bg);
 }
 
 #image-fullscreen-1 {
@@ -345,8 +347,12 @@ footer{
   color: var(--muted);
   font-size: .9rem;
   padding-inline: 6px;
-  padding: var(--ga-large) 0;
+  height: calc(2 * var(--ga-large));
   background: var(--bg);
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 footer>* {
@@ -377,6 +383,7 @@ footer a {
   #subheadline-2 {
     background-position-x: center, 62%;
     max-height: 50vh;
+    background-attachment: scroll;
   }
 }
 
