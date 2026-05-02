@@ -149,6 +149,14 @@ video {
   object-fit: cover;
 }
 
+.video-sources {
+  position: absolute;
+  bottom: 2px;
+  font-size: 12px;
+  font-weight: 300;
+  left: 12px;
+}
+
 .overlay {
   background: var(--bg);
   opacity: 0.55;
@@ -278,10 +286,21 @@ section {
   border-left: 2px solid white;
   margin: 20px auto;
   padding: 0 10px;
+  font-style: italic;
 }
 
 a {
   color: var(--accent);
+}
+
+span.small {
+  font-size: 0.8rem;
+}
+
+span.small::before {
+  content: "~";
+  position: relative;
+  padding: 2px;
 }
 
 /* Bild */
@@ -392,6 +411,9 @@ footer a {
   .header-top,
   video {
     height: 100vh;
+  }
+  .video-sources {
+    bottom: calc(2 * var(--ga-large));
   }
 }
 
