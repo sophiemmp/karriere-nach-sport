@@ -402,7 +402,6 @@ footer a {
   #subheadline-2 {
     background-position-x: center, 62%;
     max-height: 50vh;
-    background-attachment: scroll;
   }
 }
 
@@ -423,5 +422,11 @@ footer a {
   }
   #subheadline-2 {
     background-position-x: center, 65%;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  #subheadline-2 {
+    background-attachment: scroll;
   }
 }
